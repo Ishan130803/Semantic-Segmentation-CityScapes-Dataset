@@ -53,7 +53,7 @@ Network Architecture consists of  three main components : Stack Module, Reductio
 Stack consists of 3x3 convolution followed by another 3x3 convolution of input 
 concatenated with another 5x5 convolution of input
 
-![alt text](https://github.com/Ishan130803/Semantic-Segmentation-CityScapes-Dataset/blob/main/Images/Architecture/Stack_module.jpg)
+![](https://github.com/Ishan130803/Semantic-Segmentation-CityScapes-Dataset/blob/main/Images/Architecture/Stack_module.jpg)
 
 ### 2. Reduction Module
 Due to concatenation of layers in the stack module, the resultant output has an arbitrarily large number of channels. To reduce the no. of channels, a reduction module is present after every stack module. Reduction module is essentially a 1x1 convolution layer with n filters where n in our model in the no. of filters of each layer in stack module.
@@ -67,7 +67,7 @@ Skip connections are provided between the encoder and the decoder layer
 ### 5. Softmax Outputs
 Softmax Output is basically an 1x1 convolution with 34 filters whose softmax is evaluated
 
-![alt text](https://github.com/Ishan130803/Semantic-Segmentation-CityScapes-Dataset/blob/main/Images/Architecture/Softmax%20Activation.JPG)
+![](https://github.com/Ishan130803/Semantic-Segmentation-CityScapes-Dataset/blob/main/Images/Architecture/Softmax%20Activation.JPG)
 
 ## Loss Function
 Sparse Categorical Cross entropy was chosen as a loss function because we are using integer labels to train the model. 
@@ -75,7 +75,7 @@ Sparse Categorical Cross entropy was chosen as a loss function because we are us
 # Results
 Below is the result of semantic segmentation of first 32 images of validation dataset
 
-![alt text](https://github.com/Ishan130803/Semantic-Segmentation-CityScapes-Dataset/blob/main/Images/sample_ouptuts.jpg)
+![](https://github.com/Ishan130803/Semantic-Segmentation-CityScapes-Dataset/blob/main/Images/sample_ouptuts.jpg)
 
 # Conclusion
 We are able to successfully construct multiple models for semantic segmentation which  are at par with well known architectures 
